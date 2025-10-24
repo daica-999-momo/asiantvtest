@@ -1,0 +1,18 @@
+# Tên tệp: requirements.txt
+
+# Thư viện chính để thực hiện các yêu cầu HTTP bất đồng bộ
+aiohttp==3.9.1
+
+# Giúp phân giải DNS nhanh hơn, tăng tốc độ tìm kiếm IP
+aiodns==3.1.1
+
+# Tự động phát hiện mã hóa ký tự (hữu ích khi phân tích M3U)
+# Sử dụng chardet vì cchardet có thể có vấn đề với Python 3.11+
+chardet==5.2.0
+
+# Các tiện ích bất đồng bộ cốt lõi
+asyncio==3.4.3
+
+# Tùy chọn: Vòng lặp sự kiện nhanh hơn (khuyến nghị cho production)
+# Chỉ hoạt động trên Linux/Mac, không hỗ trợ Windows
+uvloop==0.19.0; sys_platform != 'win32'
