@@ -1,11 +1,11 @@
 # 📺 IPTV Playlist Generator - SMART Geo-Detection
 
-![Status](https://github.com/__REPO__/actions/workflows/update-playlist-smart.yml/badge.svg) ![Channels](https://img.shields.io/badge/channels-__CHANNELS__-success) ![Quality](https://img.shields.io/badge/quality-720p+-blue) ![Smart](https://img.shields.io/badge/detection-geo--optimized-brightgreen) ![Last Updated](https://img.shields.io/badge/updated-__UPDATED_TIME_ENCODED__-blue)
+![Status](https://github.com/daica-999-momo/asiantvtest/actions/workflows/update-playlist-smart.yml/badge.svg) ![Channels](https://img.shields.io/badge/channels-636-success) ![Quality](https://img.shields.io/badge/quality-720p+-blue) ![Smart](https://img.shields.io/badge/detection-geo--optimized-brightgreen) ![Last Updated](https://img.shields.io/badge/updated-2025-10-25%2001:55%20UTC-blue)
 
 ## 🚀 URL Playlist Tối Ưu Cho Việt Nam
 
 **Tự động phát hiện server gần Việt Nam - Hoạt động từ bất kỳ vị trí GitHub Actions nào!**
-https://raw.githubusercontent.com/__REPO__/main/playlist.m3u
+https://raw.githubusercontent.com/daica-999-momo/asiantvtest/main/playlist.m3u
 code
 Code
 ---
@@ -21,11 +21,11 @@ Code
   4. 🌍 **Domain TLD**: .vn, .sg, .th, .my...
 
 ### 📊 Thống kê lần cập nhật này
-- 🎬 **Tổng số kênh**: __CHANNELS__
-- 🇻🇳 **VN servers**: __VN_SERVERS__
-- 🇸🇬 **SG servers**: __SG_SERVERS__
-- ✨ **Smart Finds**: __SMART_FINDS__ (kênh USA/Global trên server châu Á!)
-- ✓ **High confidence**: __HIGH_CONF__
+- 🎬 **Tổng số kênh**: 636
+- 🇻🇳 **VN servers**: 11
+- 🇸🇬 **SG servers**: 110
+- ✨ **Smart Finds**: 13 (kênh USA/Global trên server châu Á!)
+- ✓ **High confidence**: 176
 
 ### 🎯 Ưu điểm vượt trội
 
@@ -84,7 +84,7 @@ Code
 | **Độ chính xác** | ~60% | ✅ ~95% |
 | **USA channels on Asian servers** | ❌ Bỏ qua | ✅ Phát hiện & ưu tiên |
 | **Hoạt động từ GitHub US** | ❌ Không chính xác | ✅ Hoàn hảo |
-| **Smart Finds** | 0 | ✅ __SMART_FINDS__ kênh |
+| **Smart Finds** | 0 | ✅ 13 kênh |
 
 ---
 
