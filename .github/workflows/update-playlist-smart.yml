@@ -14,6 +14,11 @@ jobs:
   update-playlist:
     runs-on: ubuntu-latest
 
+    # <<< SỬA LỖI: Thêm 2 dòng này để cấp quyền ghi cho workflow
+    permissions:
+      contents: write
+    # >>> Kết thúc phần sửa lỗi
+
     steps:
       # Bước 1: Lấy mã nguồn từ kho lưu trữ
       - name: Checkout repository
@@ -41,7 +46,7 @@ jobs:
         run: |
           # Lấy các giá trị từ tệp log và playlist
           # Sử dụng tail -n 1 để đảm bảo lấy số liệu từ dòng tóm tắt cuối cùng
-          CHANNELS_COUNT=$(grep -oP '#EXTINF:-1,Total: \K\d+' playlist.m mộtu | head -n 1)
+          CHANNELS_COUNT=$(grep -oP '#EXTINF:-1,Total: \K\d+' playlist.m3u | head -n 1)
           VN_SERVERS_COUNT=$(grep -oP '→ VN servers: \K\d+' iptv_generator.log | tail -n 1)
           SG_SERVERS_COUNT=$(grep -oP '→ SG servers: \K\d+' iptv_generator.log | tail -n 1)
           SMART_FINDS_COUNT=$(grep -oP '✨ SMART FINDS: \K\d+' iptv_generator.log | tail -n 1)
