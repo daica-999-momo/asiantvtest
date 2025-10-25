@@ -1,0 +1,86 @@
+# Tên tệp: .github/workflows/update-playlist-smart.yml
+
+name: Update SMART Geo-Optimized Playlist
+
+on:
+  # Cho phép chạy thủ công từ tab Actions
+  workflow_dispatch:
+
+  # Lên lịch chạy tự động 2 lần mỗi ngày vào 09:00 và 21:00 UTC
+  schedule:
+    - cron: '0 9,21 * * *'
+
+jobs:
+  update-playlist:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Bước 1: Lấy mã nguồn từ kho lưu trữ
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Bước 2: Cài đặt môi trường Python 3.11
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip' # Bật cache để tăng tốc độ cài đặt thư viện
+
+      # Bước 3: Cài đặt các thư viện cần thiết
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Bước 4: Chạy script chính để tạo playlist
+      - name: Run IPTV Generator
+        run: python iptv_generator_smart_geo.py
+
+      # Bước 5: Tự động cập nhật các số liệu thống kê vào README.md
+      - name: Update README with stats
+        run: |
+          # Lấy các giá trị từ tệp log và playlist
+          # Sử dụng tail -n 1 để đảm bảo lấy số liệu từ dòng tóm tắt cuối cùng
+          CHANNELS_COUNT=$(grep -oP '#EXTINF:-1,Total: \K\d+' playlist.m mộtu | head -n 1)
+          VN_SERVERS_COUNT=$(grep -oP '→ VN servers: \K\d+' iptv_generator.log | tail -n 1)
+          SG_SERVERS_COUNT=$(grep -oP '→ SG servers: \K\d+' iptv_generator.log | tail -n 1)
+          SMART_FINDS_COUNT=$(grep -oP '✨ SMART FINDS: \K\d+' iptv_generator.log | tail -n 1)
+          HIGH_CONF_COUNT=$(grep -oP 'High confidence detections: \K\d+' iptv_generator.log | tail -n 1)
+          
+          # Đặt giá trị mặc định là 0 nếu không tìm thấy
+          CHANNELS_COUNT=${CHANNELS_COUNT:-0}
+          VN_SERVERS_COUNT=${VN_SERVERS_COUNT:-0}
+          SG_SERVERS_COUNT=${SG_SERVERS_COUNT:-0}
+          SMART_FINDS_COUNT=${SMART_FINDS_COUNT:-0}
+          HIGH_CONF_COUNT=${HIGH_CONF_COUNT:-0}
+
+          # Lấy thời gian cập nhật UTC và định dạng cho huy hiệu (badge)
+          UPDATED_TIME_UTC=$(date -u +"%Y-%m-%d %H:%M UTC")
+          UPDATED_TIME_ENCODED=$(echo "$UPDATED_TIME_UTC" | sed 's/ /%20/g')
+
+          # Lấy tên repo để điền vào README
+          REPO_NAME="${{ github.repository }}"
+
+          # Thay thế các placeholder trong README.md
+          sed -i "s/__CHANNELS__/$CHANNELS_COUNT/g" README.md
+          sed -i "s/__VN_SERVERS__/$VN_SERVERS_COUNT/g" README.md
+          sed -i "s/__SG_SERVERS__/$SG_SERVERS_COUNT/g" README.md
+          sed -i "s/__SMART_FINDS__/$SMART_FINDS_COUNT/g" README.md
+          sed -i "s/__HIGH_CONF__/$HIGH_CONF_COUNT/g" README.md
+          sed -i "s|__REPO__|$REPO_NAME|g" README.md
+          sed -i "s/__UPDATED_TIME_ENCODED__/$UPDATED_TIME_ENCODED/g" README.md
+
+      # Bước 6: Commit và đẩy các thay đổi lên kho lưu trữ
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add playlist.m3u README.md iptv_generator.log
+          
+          # Chỉ commit nếu có sự thay đổi
+          if ! git diff --staged --quiet; then
+            git commit -m "🚀 Automated playlist update - $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          else
+            echo "No changes to commit."
+          fi
