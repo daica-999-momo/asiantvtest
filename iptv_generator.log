@@ -1,151 +1,140 @@
-2025-12-24 21:13:26,645 - INFO - ================================================================================
-2025-12-24 21:13:26,645 - INFO - IPTV GENERATOR - SMART GEO-DETECTION (works from ANY GitHub location)
-2025-12-24 21:13:26,645 - INFO - ================================================================================
-2025-12-24 21:13:26,645 - INFO - Detection methods:
-2025-12-24 21:13:26,645 - INFO -   1. CDN Provider Analysis (CloudFlare, Akamai, Asian CDNs...)
-2025-12-24 21:13:26,645 - INFO -   2. IP Address Pattern Matching (Asian IP ranges)
-2025-12-24 21:13:26,645 - INFO -   3. Hosting Provider Detection (DigitalOcean SG, AWS Asia...)
-2025-12-24 21:13:26,646 - INFO -   4. Domain TLD Analysis (.vn, .sg, .th...)
-2025-12-24 21:13:26,646 - INFO - 
-2025-12-24 21:13:26,646 - INFO - ✓ No ping dependency - works from US/EU GitHub servers
-2025-12-24 21:13:26,646 - INFO - ✓ Optimized for Vietnam users regardless of runner location
-2025-12-24 21:13:26,646 - INFO - ================================================================================
-2025-12-24 21:13:26,646 - INFO - 
+2025-12-25 09:17:42,319 - INFO - ================================================================================
+2025-12-25 09:17:42,319 - INFO - IPTV GENERATOR - SMART GEO-DETECTION (works from ANY GitHub location)
+2025-12-25 09:17:42,319 - INFO - ================================================================================
+2025-12-25 09:17:42,320 - INFO - Detection methods:
+2025-12-25 09:17:42,320 - INFO -   1. CDN Provider Analysis (CloudFlare, Akamai, Asian CDNs...)
+2025-12-25 09:17:42,320 - INFO -   2. IP Address Pattern Matching (Asian IP ranges)
+2025-12-25 09:17:42,320 - INFO -   3. Hosting Provider Detection (DigitalOcean SG, AWS Asia...)
+2025-12-25 09:17:42,320 - INFO -   4. Domain TLD Analysis (.vn, .sg, .th...)
+2025-12-25 09:17:42,320 - INFO - 
+2025-12-25 09:17:42,320 - INFO - ✓ No ping dependency - works from US/EU GitHub servers
+2025-12-25 09:17:42,320 - INFO - ✓ Optimized for Vietnam users regardless of runner location
+2025-12-25 09:17:42,320 - INFO - ================================================================================
+2025-12-25 09:17:42,320 - INFO - 
 [1/3] FETCHING SOURCES
-2025-12-24 21:13:26,646 - INFO - --------------------------------------------------------------------------------
-2025-12-24 21:13:26,646 - INFO - Fetching: https://raw.githubusercontent.com/dishiptv/dish/main/stream.m3u
-2025-12-24 21:13:26,669 - INFO - Fetching: https://raw.githubusercontent.com/LS-Station/streamecho/main/StreamEcho.m3u8
-2025-12-24 21:13:26,669 - INFO - Fetching: https://iptv-org.github.io/iptv/index.m3u
-2025-12-24 21:13:26,670 - INFO - Fetching: https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
-2025-12-24 21:13:26,670 - INFO - Fetching: https://raw.githubusercontent.com/binhex/iptv/main/eng.m3u
-2025-12-24 21:13:26,670 - INFO - Fetching: https://raw.githubusercontent.com/serdartas/iptv-playlist/main/refined.m3u
-2025-12-24 21:13:26,670 - INFO - Fetching: https://raw.githubusercontent.com/ipstreet312/freeiptv/master/all.m3u
-2025-12-24 21:13:26,671 - INFO - Fetching: https://raw.githubusercontent.com/sultanarabi161/filoox-bdix/main/playlist.m3u
-2025-12-24 21:13:26,671 - INFO - Fetching: https://raw.githubusercontent.com/Miraz6755/Iptv.m3u/main/DaddyLive.m3u
-2025-12-24 21:13:26,671 - INFO - Fetching: https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/iPTV-FREE-LIST/master/iPTV-Free-List_TV.m3u
-2025-12-24 21:13:26,671 - INFO - Fetching: https://raw.githubusercontent.com/dp247/IPTV/master/playlists/playlist_usa.m3u8
-2025-12-24 21:13:26,671 - INFO - Fetching: https://raw.githubusercontent.com/dp247/IPTV/master/playlists/playlist_uk.m3u8
-2025-12-24 21:13:26,672 - INFO - Fetching: https://raw.githubusercontent.com/HabibSay/free_iptv_m3u8/refs/heads/main/all_channels.m3u
-2025-12-24 21:13:26,672 - INFO - Fetching: https://raw.githubusercontent.com/AzeemHadzrie/iptv-asia/refs/heads/main/iptv_asia.m3u
-2025-12-24 21:13:26,672 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/singapore.m3u
-2025-12-24 21:13:26,672 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/sinetron.m3u
-2025-12-24 21:13:26,672 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/playlist.m3u
-2025-12-24 21:13:26,673 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/malaysia.m3u
-2025-12-24 21:13:26,673 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/korea.m3u
-2025-12-24 21:13:26,673 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/japan.m3u
-2025-12-24 21:13:26,673 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/international.m3u
-2025-12-24 21:13:26,673 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/indonesia.m3u
-2025-12-24 21:13:26,673 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/asia.m3u
-2025-12-24 21:13:26,673 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/index.m3u
-2025-12-24 21:13:26,674 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/channels/my.m3u
-2025-12-24 21:13:26,674 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/channels/id.m3u
-2025-12-24 21:13:26,674 - INFO - Fetching: https://raw.githubusercontent.com/est8survey/Asia_IPTV_Astro_Combined.m3u/refs/heads/main/Asia_IPTV_Astro_Combined.m3u
-2025-12-24 21:13:26,674 - INFO - Fetching: https://aymrgknetzpucldhpkwm.supabase.co/storage/v1/object/public/tmdb/top-movies.m3u
-2025-12-24 21:13:26,674 - INFO - Fetching: https://aymrgknetzpucldhpkwm.supabase.co/storage/v1/object/public/tmdb/action-movies.m3u
-2025-12-24 21:13:26,674 - INFO - Fetching: https://aymrgknetzpucldhpkwm.supabase.co/storage/v1/object/public/tmdb/comedy-movies.m3u
-2025-12-24 21:13:26,675 - INFO - Fetching: https://aymrgknetzpucldhpkwm.supabase.co/storage/v1/object/public/tmdb/horror-movies.m3u
-2025-12-24 21:13:26,739 - WARNING - HTTP 404: https://raw.githubusercontent.com/LS-Station/streamecho/main/StreamEcho.m3u8
-2025-12-24 21:13:28,320 - INFO - ✓ 20 channels from https://raw.githubusercontent.com/serdartas/iptv-playlist/main/refined.m3u
-2025-12-24 21:13:31,883 - INFO - ✓ 217 channels from https://raw.githubusercontent.com/dishiptv/dish/main/stream.m3u
-2025-12-24 21:24:14,057 - INFO - ✓ 1851 channels from https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
-2025-12-24 21:26:55,255 - INFO - ✓ 2337 channels from https://raw.githubusercontent.com/binhex/iptv/main/eng.m3u
-2025-12-24 21:27:00,080 - INFO - ✓ 338 channels from https://raw.githubusercontent.com/Miraz6755/Iptv.m3u/main/DaddyLive.m3u
-2025-12-24 21:27:00,492 - INFO - ✓ 19 channels from https://raw.githubusercontent.com/dp247/IPTV/master/playlists/playlist_usa.m3u8
-2025-12-24 21:27:14,292 - INFO - ✓ 57 channels from https://raw.githubusercontent.com/dp247/IPTV/master/playlists/playlist_uk.m3u8
-2025-12-24 21:28:32,342 - INFO - ✓ 475 channels from https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/iPTV-FREE-LIST/master/iPTV-Free-List_TV.m3u
-2025-12-24 21:28:32,673 - INFO - ✓ 394 channels from https://raw.githubusercontent.com/sultanarabi161/filoox-bdix/main/playlist.m3u
-2025-12-24 21:36:04,413 - INFO - ✓ 3002 channels from https://raw.githubusercontent.com/ipstreet312/freeiptv/master/all.m3u
-2025-12-24 21:36:04,414 - WARNING - HTTP 404: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/sinetron.m3u
-2025-12-24 21:36:04,414 - WARNING - HTTP 404: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/singapore.m3u
-2025-12-24 21:36:27,692 - INFO - ✓ 260 channels from https://raw.githubusercontent.com/AzeemHadzrie/iptv-asia/refs/heads/main/iptv_asia.m3u
-2025-12-24 21:36:27,701 - ERROR - Error: https://iptv-org.github.io/iptv/index.m3u - 
-2025-12-24 21:36:27,702 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/korea.m3u - 
-2025-12-24 21:36:27,702 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/playlist.m3u - 
-2025-12-24 21:36:27,702 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/malaysia.m3u - 
-2025-12-24 21:36:27,702 - ERROR - Error: https://aymrgknetzpucldhpkwm.supabase.co/storage/v1/object/public/tmdb/horror-movies.m3u - 
-2025-12-24 21:36:27,702 - ERROR - Error: https://aymrgknetzpucldhpkwm.supabase.co/storage/v1/object/public/tmdb/comedy-movies.m3u - 
-2025-12-24 21:36:27,702 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/channels/my.m3u - 
-2025-12-24 21:36:27,702 - ERROR - Error: https://aymrgknetzpucldhpkwm.supabase.co/storage/v1/object/public/tmdb/action-movies.m3u - 
-2025-12-24 21:36:27,703 - ERROR - Error: https://aymrgknetzpucldhpkwm.supabase.co/storage/v1/object/public/tmdb/top-movies.m3u - 
-2025-12-24 21:36:27,703 - ERROR - Error: https://raw.githubusercontent.com/HabibSay/free_iptv_m3u8/refs/heads/main/all_channels.m3u - 
-2025-12-24 21:36:27,703 - ERROR - Error: https://raw.githubusercontent.com/est8survey/Asia_IPTV_Astro_Combined.m3u/refs/heads/main/Asia_IPTV_Astro_Combined.m3u - 
-2025-12-24 21:36:27,703 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/channels/id.m3u - 
-2025-12-24 21:36:27,703 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/index.m3u - 
-2025-12-24 21:36:27,703 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/asia.m3u - 
-2025-12-24 21:36:27,703 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/indonesia.m3u - 
-2025-12-24 21:36:27,703 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/international.m3u - 
-2025-12-24 21:36:27,704 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/japan.m3u - 
-2025-12-24 21:36:27,705 - INFO - 
-Total channels fetched: 8970
-2025-12-24 21:36:27,706 - INFO - After quality pre-filter: 6044
-2025-12-24 21:36:27,706 - INFO - 
+2025-12-25 09:17:42,320 - INFO - --------------------------------------------------------------------------------
+2025-12-25 09:17:42,320 - INFO - Fetching: https://raw.githubusercontent.com/dishiptv/dish/main/stream.m3u
+2025-12-25 09:17:42,342 - INFO - Fetching: https://raw.githubusercontent.com/LS-Station/streamecho/main/StreamEcho.m3u8
+2025-12-25 09:17:42,343 - INFO - Fetching: https://iptv-org.github.io/iptv/index.m3u
+2025-12-25 09:17:42,343 - INFO - Fetching: https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
+2025-12-25 09:17:42,343 - INFO - Fetching: https://raw.githubusercontent.com/binhex/iptv/main/eng.m3u
+2025-12-25 09:17:42,343 - INFO - Fetching: https://raw.githubusercontent.com/serdartas/iptv-playlist/main/refined.m3u
+2025-12-25 09:17:42,344 - INFO - Fetching: https://raw.githubusercontent.com/ipstreet312/freeiptv/master/all.m3u
+2025-12-25 09:17:42,344 - INFO - Fetching: https://raw.githubusercontent.com/sultanarabi161/filoox-bdix/main/playlist.m3u
+2025-12-25 09:17:42,344 - INFO - Fetching: https://raw.githubusercontent.com/Miraz6755/Iptv.m3u/main/DaddyLive.m3u
+2025-12-25 09:17:42,344 - INFO - Fetching: https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/iPTV-FREE-LIST/master/iPTV-Free-List_TV.m3u
+2025-12-25 09:17:42,344 - INFO - Fetching: https://raw.githubusercontent.com/dp247/IPTV/master/playlists/playlist_usa.m3u8
+2025-12-25 09:17:42,345 - INFO - Fetching: https://raw.githubusercontent.com/dp247/IPTV/master/playlists/playlist_uk.m3u8
+2025-12-25 09:17:42,345 - INFO - Fetching: https://raw.githubusercontent.com/HabibSay/free_iptv_m3u8/refs/heads/main/all_channels.m3u
+2025-12-25 09:17:42,345 - INFO - Fetching: https://raw.githubusercontent.com/AzeemHadzrie/iptv-asia/refs/heads/main/iptv_asia.m3u
+2025-12-25 09:17:42,345 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/singapore.m3u
+2025-12-25 09:17:42,345 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/sinetron.m3u
+2025-12-25 09:17:42,345 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/playlist.m3u
+2025-12-25 09:17:42,345 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/malaysia.m3u
+2025-12-25 09:17:42,346 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/korea.m3u
+2025-12-25 09:17:42,346 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/japan.m3u
+2025-12-25 09:17:42,346 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/international.m3u
+2025-12-25 09:17:42,346 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/indonesia.m3u
+2025-12-25 09:17:42,346 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/asia.m3u
+2025-12-25 09:17:42,346 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/index.m3u
+2025-12-25 09:17:42,346 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/channels/my.m3u
+2025-12-25 09:17:42,347 - INFO - Fetching: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/channels/id.m3u
+2025-12-25 09:17:42,347 - INFO - Fetching: https://raw.githubusercontent.com/est8survey/Asia_IPTV_Astro_Combined.m3u/refs/heads/main/Asia_IPTV_Astro_Combined.m3u
+2025-12-25 09:17:42,347 - INFO - Fetching: https://aymrgknetzpucldhpkwm.supabase.co/storage/v1/object/public/tmdb/top-movies.m3u
+2025-12-25 09:17:42,347 - INFO - Fetching: https://aymrgknetzpucldhpkwm.supabase.co/storage/v1/object/public/tmdb/action-movies.m3u
+2025-12-25 09:17:42,347 - INFO - Fetching: https://aymrgknetzpucldhpkwm.supabase.co/storage/v1/object/public/tmdb/comedy-movies.m3u
+2025-12-25 09:17:42,347 - INFO - Fetching: https://aymrgknetzpucldhpkwm.supabase.co/storage/v1/object/public/tmdb/horror-movies.m3u
+2025-12-25 09:28:58,035 - INFO - ✓ 1851 channels from https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8
+2025-12-25 09:28:58,053 - ERROR - Error: https://aymrgknetzpucldhpkwm.supabase.co/storage/v1/object/public/tmdb/comedy-movies.m3u - 
+2025-12-25 09:28:58,053 - ERROR - Error: https://aymrgknetzpucldhpkwm.supabase.co/storage/v1/object/public/tmdb/top-movies.m3u - 
+2025-12-25 09:28:58,053 - ERROR - Error: https://aymrgknetzpucldhpkwm.supabase.co/storage/v1/object/public/tmdb/action-movies.m3u - 
+2025-12-25 09:28:58,054 - ERROR - Error: https://aymrgknetzpucldhpkwm.supabase.co/storage/v1/object/public/tmdb/horror-movies.m3u - 
+2025-12-25 09:28:58,054 - ERROR - Error: https://raw.githubusercontent.com/LS-Station/streamecho/main/StreamEcho.m3u8 - 
+2025-12-25 09:28:58,054 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/sinetron.m3u - 
+2025-12-25 09:28:58,054 - ERROR - Error: https://raw.githubusercontent.com/dishiptv/dish/main/stream.m3u - 
+2025-12-25 09:28:58,054 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/singapore.m3u - 
+2025-12-25 09:28:58,054 - ERROR - Error: https://raw.githubusercontent.com/Miraz6755/Iptv.m3u/main/DaddyLive.m3u - 
+2025-12-25 09:28:58,055 - ERROR - Error: https://raw.githubusercontent.com/dp247/IPTV/master/playlists/playlist_usa.m3u8 - 
+2025-12-25 09:28:58,055 - ERROR - Error: https://raw.githubusercontent.com/serdartas/iptv-playlist/main/refined.m3u - 
+2025-12-25 09:28:58,055 - ERROR - Error: https://raw.githubusercontent.com/sultanarabi161/filoox-bdix/main/playlist.m3u - 
+2025-12-25 09:28:58,055 - ERROR - Error: https://raw.githubusercontent.com/dp247/IPTV/master/playlists/playlist_uk.m3u8 - 
+2025-12-25 09:28:58,056 - ERROR - Error: https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/iPTV-FREE-LIST/master/iPTV-Free-List_TV.m3u - 
+2025-12-25 09:28:58,057 - ERROR - Error: https://raw.githubusercontent.com/binhex/iptv/main/eng.m3u - 
+2025-12-25 09:28:58,057 - ERROR - Error: https://raw.githubusercontent.com/AzeemHadzrie/iptv-asia/refs/heads/main/iptv_asia.m3u - 
+2025-12-25 09:28:58,057 - ERROR - Error: https://raw.githubusercontent.com/ipstreet312/freeiptv/master/all.m3u - 
+2025-12-25 09:28:58,057 - ERROR - Error: https://raw.githubusercontent.com/HabibSay/free_iptv_m3u8/refs/heads/main/all_channels.m3u - 
+2025-12-25 09:28:58,057 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/channels/my.m3u - 
+2025-12-25 09:28:58,057 - ERROR - Error: https://iptv-org.github.io/iptv/index.m3u - 
+2025-12-25 09:28:58,057 - ERROR - Error: https://raw.githubusercontent.com/est8survey/Asia_IPTV_Astro_Combined.m3u/refs/heads/main/Asia_IPTV_Astro_Combined.m3u - 
+2025-12-25 09:28:58,057 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/channels/id.m3u - 
+2025-12-25 09:28:58,057 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/index.m3u - 
+2025-12-25 09:28:58,057 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/asia.m3u - 
+2025-12-25 09:28:58,058 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/indonesia.m3u - 
+2025-12-25 09:28:58,058 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/international.m3u - 
+2025-12-25 09:28:58,058 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/japan.m3u - 
+2025-12-25 09:28:58,058 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/korea.m3u - 
+2025-12-25 09:28:58,058 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/malaysia.m3u - 
+2025-12-25 09:28:58,058 - ERROR - Error: https://raw.githubusercontent.com/haqem/iptv-malaysia/refs/heads/main/playlist.m3u - 
+2025-12-25 09:28:58,059 - INFO - 
+Total channels fetched: 1851
+2025-12-25 09:28:58,060 - INFO - After quality pre-filter: 1340
+2025-12-25 09:28:58,060 - INFO - 
 📊 GEO-DETECTION ANALYSIS:
-2025-12-24 21:36:27,706 - INFO - --------------------------------------------------------------------------------
-2025-12-24 21:36:27,707 - INFO -   VN servers: 48
-2025-12-24 21:36:27,707 - INFO -   SG servers: 501
-2025-12-24 21:36:27,707 - INFO -   SEA region: 44
-2025-12-24 21:36:27,707 - INFO -   ASIA region: 131
-2025-12-24 21:36:27,707 - INFO -   CDN (global): 675
-2025-12-24 21:36:27,707 - INFO -   Unknown: 4637
-2025-12-24 21:36:27,707 - INFO - 
+2025-12-25 09:28:58,060 - INFO - --------------------------------------------------------------------------------
+2025-12-25 09:28:58,060 - INFO -   VN servers: 18
+2025-12-25 09:28:58,060 - INFO -   SG servers: 111
+2025-12-25 09:28:58,060 - INFO -   SEA region: 1
+2025-12-25 09:28:58,060 - INFO -   ASIA region: 32
+2025-12-25 09:28:58,060 - INFO -   CDN (global): 143
+2025-12-25 09:28:58,060 - INFO -   Unknown: 1035
+2025-12-25 09:28:58,061 - INFO - 
 📊 CONFIDENCE LEVELS:
-2025-12-24 21:36:27,707 - INFO -   High (≥80%): 1381
-2025-12-24 21:36:27,708 - INFO -   Medium (60-79%): 18
-2025-12-24 21:36:27,708 - INFO -   Low (<60%): 4645
-2025-12-24 21:36:27,708 - INFO - 
+2025-12-25 09:28:58,061 - INFO -   High (≥80%): 303
+2025-12-25 09:28:58,061 - INFO -   Medium (60-79%): 2
+2025-12-25 09:28:58,061 - INFO -   Low (<60%): 1035
+2025-12-25 09:28:58,061 - INFO - 
 ✨ SMART FINDS PREVIEW (Global content on SEA servers):
-2025-12-24 21:36:27,708 - INFO -   → CGTN Français | Server: VN (confidence: 100%)
-2025-12-24 21:36:27,708 - INFO -   → ONE  | Server: SG (confidence: 95%)
-2025-12-24 21:36:27,708 - INFO -   → NDR Hamburg  | Server: SG (confidence: 95%)
-2025-12-24 21:36:27,708 - INFO -   → NDR Mecklenburg-Vorpommern  | Server: SG (confidence: 95%)
-2025-12-24 21:36:27,708 - INFO -   → NDR Niedersachsen  | Server: SG (confidence: 95%)
-2025-12-24 21:36:27,708 - INFO - 
+2025-12-25 09:28:58,061 - INFO -   → CGTN Français | Server: VN (confidence: 100%)
+2025-12-25 09:28:58,061 - INFO -   → Das Erste  | Server: SG (confidence: 95%)
+2025-12-25 09:28:58,061 - INFO -   → ONE  | Server: SG (confidence: 95%)
+2025-12-25 09:28:58,061 - INFO -   → NDR Hamburg  | Server: SG (confidence: 95%)
+2025-12-25 09:28:58,061 - INFO -   → NDR Mecklenburg-Vorpommern  | Server: SG (confidence: 95%)
+2025-12-25 09:28:58,061 - INFO - 
 [2/3] CHECKING CHANNEL AVAILABILITY
-2025-12-24 21:36:27,708 - INFO - --------------------------------------------------------------------------------
-2025-12-24 21:36:48,844 - INFO - Progress: 450/6044 | Working: 183
-2025-12-24 21:37:09,845 - INFO - Progress: 900/6044 | Working: 441
-2025-12-24 21:37:25,407 - INFO - Progress: 1350/6044 | Working: 582
-2025-12-24 21:37:45,847 - INFO - Progress: 1800/6044 | Working: 830
-2025-12-24 21:38:03,850 - INFO - Progress: 2250/6044 | Working: 1094
-2025-12-24 21:38:24,846 - INFO - Progress: 2700/6044 | Working: 1356
-2025-12-24 21:38:45,846 - INFO - Progress: 3150/6044 | Working: 1632
-2025-12-24 21:39:06,846 - INFO - Progress: 3600/6044 | Working: 1884
-2025-12-24 21:39:27,847 - INFO - Progress: 4050/6044 | Working: 2076
-2025-12-24 21:39:43,441 - INFO - Progress: 4500/6044 | Working: 2382
-2025-12-24 21:39:58,845 - INFO - Progress: 4950/6044 | Working: 2620
-2025-12-24 21:40:26,846 - INFO - Progress: 5400/6044 | Working: 2720
-2025-12-24 21:40:47,846 - INFO - Progress: 5850/6044 | Working: 2932
-2025-12-24 21:40:55,805 - INFO - Progress: 6044/6044 | Working: 3019
-2025-12-24 21:40:55,813 - INFO - 
+2025-12-25 09:28:58,061 - INFO - --------------------------------------------------------------------------------
+2025-12-25 09:29:19,886 - INFO - Progress: 450/1340 | Working: 190
+2025-12-25 09:29:40,889 - INFO - Progress: 900/1340 | Working: 427
+2025-12-25 09:29:56,270 - INFO - Progress: 1340/1340 | Working: 547
+2025-12-25 09:29:56,276 - INFO - 
 [3/3] FILTERING & GENERATING OUTPUT
-2025-12-24 21:40:55,813 - INFO - --------------------------------------------------------------------------------
-2025-12-24 21:40:55,813 - INFO - Starting SMART geo-filtering on 6044 channels...
-2025-12-24 21:40:55,813 - INFO - Working channels: 3019/6044
-2025-12-24 21:40:55,814 - INFO - After quality filter: 3019/3019
-2025-12-24 21:40:55,814 - INFO - Fast enough: 3006/3019
-2025-12-24 21:40:55,815 - INFO - After URL dedup: 2703
-2025-12-24 21:40:55,821 - INFO - Final channels: 2339
-2025-12-24 21:40:55,821 - INFO -   └─ VN: 22 | SG: 245 | SEA: 19 | ASIA: 50 | CDN: 208
-2025-12-24 21:40:55,821 - INFO -   └─ High confidence (≥80%): 536/2339
-2025-12-24 21:40:55,821 - INFO -   └─ ✨ SMART FINDS: 34 Global channels on SEA servers!
-2025-12-24 21:40:55,821 - INFO - Generating SMART geo-optimized M3U playlist...
-2025-12-24 21:40:55,829 - INFO - 
+2025-12-25 09:29:56,276 - INFO - --------------------------------------------------------------------------------
+2025-12-25 09:29:56,276 - INFO - Starting SMART geo-filtering on 1340 channels...
+2025-12-25 09:29:56,276 - INFO - Working channels: 547/1340
+2025-12-25 09:29:56,276 - INFO - After quality filter: 547/547
+2025-12-25 09:29:56,276 - INFO - Fast enough: 547/547
+2025-12-25 09:29:56,276 - INFO - After URL dedup: 545
+2025-12-25 09:29:56,277 - INFO - Final channels: 541
+2025-12-25 09:29:56,277 - INFO -   └─ VN: 17 | SG: 39 | SEA: 1 | ASIA: 7 | CDN: 45
+2025-12-25 09:29:56,277 - INFO -   └─ High confidence (≥80%): 107/541
+2025-12-25 09:29:56,278 - INFO -   └─ ✨ SMART FINDS: 9 Global channels on SEA servers!
+2025-12-25 09:29:56,278 - INFO - Generating SMART geo-optimized M3U playlist...
+2025-12-25 09:29:56,280 - INFO - 
 ================================================================================
-2025-12-24 21:40:55,829 - INFO - ✓✓✓ SUCCESS! Generated 2339 SMART GEO-OPTIMIZED channels
-2025-12-24 21:40:55,829 - INFO - ================================================================================
-2025-12-24 21:40:55,829 - INFO - SMART DETECTION SUMMARY:
-2025-12-24 21:40:55,829 - INFO -   Server Distribution:
-2025-12-24 21:40:55,829 - INFO -     → VN servers: 22
-2025-12-24 21:40:55,829 - INFO -     → SG servers: 245
-2025-12-24 21:40:55,829 - INFO -     → SEA region: 19
-2025-12-24 21:40:55,829 - INFO -     → ASIA region: 50
-2025-12-24 21:40:55,830 - INFO -     → CDN global: 208
-2025-12-24 21:40:55,830 - INFO -   High confidence detections: 536/2339 (22%)
-2025-12-24 21:40:55,830 - INFO -   ✨ SMART FINDS: 34 USA/Global channels on SEA servers!
-2025-12-24 21:40:55,830 - INFO - 
-2025-12-24 21:40:55,830 - INFO - Execution time: 27m 29s
-2025-12-24 21:40:55,830 - INFO - Playlist saved to: playlist.m3u
-2025-12-24 21:40:55,830 - INFO - ================================================================================
-2025-12-24 21:40:55,830 - INFO - ✓ Detection works from ANY GitHub Actions location (US/EU/Asia)
-2025-12-24 21:40:55,830 - INFO - ✓ Optimized for Vietnam users based on server geo-location
-2025-12-24 21:40:55,830 - INFO - ================================================================================
+2025-12-25 09:29:56,280 - INFO - ✓✓✓ SUCCESS! Generated 541 SMART GEO-OPTIMIZED channels
+2025-12-25 09:29:56,280 - INFO - ================================================================================
+2025-12-25 09:29:56,280 - INFO - SMART DETECTION SUMMARY:
+2025-12-25 09:29:56,280 - INFO -   Server Distribution:
+2025-12-25 09:29:56,280 - INFO -     → VN servers: 17
+2025-12-25 09:29:56,280 - INFO -     → SG servers: 39
+2025-12-25 09:29:56,280 - INFO -     → SEA region: 1
+2025-12-25 09:29:56,281 - INFO -     → ASIA region: 7
+2025-12-25 09:29:56,281 - INFO -     → CDN global: 45
+2025-12-25 09:29:56,281 - INFO -   High confidence detections: 107/541 (19%)
+2025-12-25 09:29:56,281 - INFO -   ✨ SMART FINDS: 9 USA/Global channels on SEA servers!
+2025-12-25 09:29:56,281 - INFO - 
+2025-12-25 09:29:56,281 - INFO - Execution time: 12m 13s
+2025-12-25 09:29:56,281 - INFO - Playlist saved to: playlist.m3u
+2025-12-25 09:29:56,281 - INFO - ================================================================================
+2025-12-25 09:29:56,281 - INFO - ✓ Detection works from ANY GitHub Actions location (US/EU/Asia)
+2025-12-25 09:29:56,281 - INFO - ✓ Optimized for Vietnam users based on server geo-location
+2025-12-25 09:29:56,281 - INFO - ================================================================================
